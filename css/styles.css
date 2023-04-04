@@ -52,7 +52,7 @@ a:link, a:visited, a:active{
     text-decoration: none;
     font-size: 3rem;
     color: var(--white);
-    transition: color .3s ease-in-out,.3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 .index-header nav menu li a:hover{
     box-shadow: inset 0 0 0 0 var(--black);
@@ -62,7 +62,7 @@ a:link, a:visited, a:active{
 .index-header nav menu li i{
     position: relative;
     color: var(--white);
-    transition: color .2s ease-in-out, .3s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 .index-header nav menu li i:hover{
     box-shadow: inset 0 0 0 0 var(--black);
@@ -346,8 +346,86 @@ a:link, a:visited, a:active{
     padding: 10px;
     font-size: 2rem;
     color: var(--white);
-    transition: color .3s ease-in-out, .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 .buy-now div span h2:hover{
     color: var(--green);
 }
+
+/*Contact*/
+
+.contact-masthead{
+    display: flex;
+    justify-content: center;
+    background: rgba(230, 230, 230, 1);
+
+}
+.contact-masthead div h1{
+    font-size: 3rem;
+}
+.faq{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    background: rgba(230, 230, 230, 1);
+
+} 
+.faq div{
+    margin: 1vw;
+    outline: 3px solid rgba(14, 14, 14, 0.5);
+    border-radius: 10px;
+    transition: outline-width 0.2s ease-in-out  ;
+    padding: 10px;
+    background: rgba(240, 240, 240, 1);
+}
+.faq div:hover{
+outline-width: 6px;
+}
+.faq div span{
+    margin-left: 5px;
+    width: auto;
+    padding: 1vw;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230, 230, 230, 1);
+    height: 26vh;
+    box-sizing: border-box;
+}
+.contact-form div form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+.contact-form div form input{
+    border: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 10vw; 
+}
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form div a h2{
+    border: solid 2px var(--black);
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 3px;
+    padding: 1px;
+    margin: 10px 0px 0px 0px;
+    font-size: 1.5rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.contact-form div a h2:hover{
+    box-shadow: inset 10em 0 0 0 var(--black);
+    color: var(--white);
+}
+
