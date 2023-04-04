@@ -143,7 +143,7 @@ a:link, a:visited, a:active{
     flex-wrap: wrap;
 }
 .news-cta div{
-    height: 18rem;
+    height: 15.5rem;
     width: 20rem;
     padding: 0px 2rem;
     margin: 10px;
@@ -187,7 +187,7 @@ a:link, a:visited, a:active{
     word-spacing: 1px;
     text-decoration: none;
 }
-.index-footer div span{
+#sign{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -288,10 +288,10 @@ a:link, a:visited, a:active{
 .sky h2{
     font-size: 2rem;
 }
-.sky div span h2:nth-child(1){
+.sky div h2:nth-child(1){
     color: var(--black);
 }
-.sky div:nth-child(3) span h2{
+.sky div:nth-child(3) h2{
     offset: 100px;
     color: var(--white);
 }
@@ -305,14 +305,14 @@ a:link, a:visited, a:active{
 .ocean div:nth-child(1){
     background: var(--darkBlue);
 }
-.ocean div:nth-child(1) span h2{
+.ocean div:nth-child(1) h2{
     color: var(--niceWhite);
     font-size: 2rem;
 }
 .ocean div:nth-child(2){
     justify-content: center;
 }
-.ocean div:nth-child(2) span h2{
+.ocean div:nth-child(2) h2{
     color: var(--orange);
     font-size: 4rem;
     text-shadow: 2px 3px 2px var(--black);
@@ -342,13 +342,13 @@ a:link, a:visited, a:active{
     width: auto;
     margin-top: 1rem;
 }
-.buy-now div span h2{
+.buy-now div h2{
     padding: 10px;
     font-size: 2rem;
     color: var(--white);
     transition: color .3s ease-in-out;
 }
-.buy-now div span h2:hover{
+.buy-now div h2:hover{
     color: var(--green);
 }
 
@@ -360,7 +360,7 @@ a:link, a:visited, a:active{
     background: rgba(230, 230, 230, 1);
 
 }
-.contact-masthead div h1{
+.contact-masthead div h2{
     font-size: 3rem;
 }
 .faq{
@@ -381,7 +381,7 @@ a:link, a:visited, a:active{
 .faq div:hover{
 outline-width: 6px;
 }
-.faq div span{
+.faq div{
     margin-left: 5px;
     width: auto;
     padding: 1vw;
@@ -428,4 +428,36 @@ outline-width: 6px;
     box-shadow: inset 10em 0 0 0 var(--black);
     color: var(--white);
 }
-
+.about-masthead{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: rgba(20, 11, 115, 0.125);
+}
+.about-masthead div h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    padding: 0 1rem;
+    border-left: solid 4px #0e0e0e;
+    border-right: solid 4px #0e0e0e;
+    border-radius: 20px;
+}
+.entries-container{
+    display: flex;
+    padding: 0rem 8rem;
+    justify-content: center;
+    flex-direction: column;
+    background: -moz-linear-gradient(rgba(20, 11, 115, 0.125), rgba(20, 11, 115, 0.25));
+    background: -webkit-linear-gradient(rgba(20, 11, 115, 0.125), rgba(20, 11, 115, 0.25));
+    background: linear-gradient(rgba(20, 11, 115, 0.125), rgba(20, 11, 115, 0.25));
+}
+.entries-container div{
+    margin: 1rem;
+    border-bottom: #0e0e0e 4px solid;
+}
+.entries-container div h2{
+    text-decoration: underline;
+}
+.entries-container div a{
+    color: var(--green);
+}
